@@ -92,3 +92,7 @@ rm(feature_names)
 rm(features)
 rm(i)
 rm(activities)
+
+## We can now write our two tidy datasets to csv files.
+write.csv(df,"df.csv", row.names = FALSE)
+write.csv(df_means,"df_means.csv", row.names = FALSE)
